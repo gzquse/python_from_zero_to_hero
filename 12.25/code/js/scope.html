@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My first web page</title>
+</head>
+<body>
+
+	<div id="another" sytle="color:black;" onclick="change_color()">My color will be changed2.
+	</div> 
+
+    <div id="text" sytle="color:black;">My color will be changed!.
+	</div> 
+<br>
+<br>
+<br>
+<br>
+	<button id="button">click me</button>  
+    <div id="gong" width="100px" style="width: 100px;height: 100px;background-color: pink;"></div>
+
+	<script type="text/javascript">
+    var button = document.getElementById("button");
+    var square = document.getElementById("gong");  
+  
+    button.onclick = function () {  
+        square.style.display = "none";  
+    };  
+
+	var change_color = function(){
+		console.log("please see current:"+this);
+		this.style.color = "red";
+	};
+
+	window.onload = function(){
+		var text = document.getElementById("text");
+		text.onclick = change_color; // works fine
+	};
+	//inline event registration this is not refer current dom node, but window
+	</script>
+</body>
+</html>

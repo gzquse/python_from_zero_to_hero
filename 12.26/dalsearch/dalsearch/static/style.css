@@ -1,0 +1,36 @@
+
+
+.qbtn{
+    margin-top: 10px;
+}
+
+#sq{
+    width: 100%;
+    font: 16px arial,sans-serif;
+    line-height: 34px;
+    height: 34px;
+}
+
+.qbtn button[type="submit"] {
+    height: 36px;
+    line-height: 27px;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.qbtn input[type="submit"]{
+    height: 36px;
+    line-height: 27px;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+}

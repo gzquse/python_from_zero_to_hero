@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>JavaScript!</title>
+            <script src="jquery-3.2.1.min.js"></script>
+<style>
+a.test {
+    font-weight: bold;
+}
+</style>
+    </head>
+    <body>
+        <a href="http://jquery.com/">jQuery</a>
+     
+        <script type="text/javascript">
+        // <![CDATA[
+
+        $( document ).ready(function() {
+            // Your code here.
+             window.onload = function() {             
+                alert( "welcome" );};      
+//The jQuery library exposes its methods and properties via two properties of the window object called jQuery and $. $ is simply an alias for jQuery and it's often employed because it's shorter and faster to write.
+
+    $( "a" ).click(function( event ) {
+ 
+        alert( "Thanks for visiting!" );
+        event.preventDefault();       
+        $("a").addClass( "test" );
+        //$(this).addClass( "test" );
+    });
+        });
+        //$( "a" ).removeClass( "test" );
+
+        /*
+$( "a" ).click(function( event ) {
+ 
+    event.preventDefault();
+ 
+    $( this ).hide( "slow" );
+ 
+});
+$.get( "myhtmlpage.html", myCallBack );
+
+        */
+        // ]]>
+        </script>
+     
+    </body>
+</html>
